@@ -51,6 +51,31 @@ Some browsers either require a browser extension or cannot generate a HAR. When 
 
 6. Attach the HAR file to your support ticket.
 
+### In Chrome versions 131+
+
+Chrome versions 131+ do not have the options to **Save all as HAR with Content**.
+
+When using Chrome version 131 and above please save a HAR file either by:
+
+1. Browse to the URL that causes issues. Once the issue is experienced, right click on any of the items within the **Network** tab and select **Copy all as HAR (sanitized)**.
+
+2. Save the copied data into a file with .har extension.
+
+*or*
+
+1. Browse to the URL that causes issues. Once the issue is experienced, clicko on the download icon next to the the setting icon.
+
+Also note that Chrome version 131 will sanitize the HAR removing cookies and other personal data.
+
+While usually it is not necessary for Cloudflare to have such data, it might be necessary sometimes to have such data to fully troubleshoot a specific error.
+
+In this case before saving the HAR file press the F1  key, then check the option Allow to generate HAR with sensitive data.
+
+1. Browse to the URL that causes issues. Once the issue is experienced, right click on any of the items within the **Network** tab and select **Copy all as HAR (with sensitive data)**.
+
+2. Save the copied data into a file with .har extension.
+
+
 ### In Firefox
 
 1. While using a Private Window, use the application menu and  select **Tools** > **Web Developer** > **Network** or press *Ctrl+Shift+I* (Windows/Linux) or *Cmd+Option+I* (OS X).
